@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.page__body {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: none;
+  font-style: normal;
+  color: $black;
+  background-color: $white;
+  min-height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+}
