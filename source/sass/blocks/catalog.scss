@@ -5,21 +5,25 @@
   line-height: $line-height-big;
   font-weight: $font-weight-regular;
 }
+
 .catalog__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .catalog__item-title {
   font-size: $font-size-mini;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
   color: $black-grey;
+
   &--more {
     color: $black-lighter;
   }
 }
+
 .catalog__item-weight,
 .catalog__item-taste,
 .catalog__item-price,
@@ -30,6 +34,7 @@
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
 }
+
 .catalog__link {
   font-family: "Oswald", sans-serif;
   font-size: $font-size-mini;
@@ -40,6 +45,7 @@
   border: none;
   text-transform: uppercase;
   text-decoration: none;
+
   &--more {
     color: $special-dark-grey;
     background-color: $basic-grey;

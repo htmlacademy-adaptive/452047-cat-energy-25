@@ -5,15 +5,18 @@
   padding: 0;
   margin: 0;
 }
+
 .offer__item {
   background-color: $basic-grey;
 }
+
 .offer__title {
   font-size: $font-size-normal;
   line-height: $line-height-mega;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
 }
+
 .offer__text {
   font-family: "Ariel", sans-serif;
   font-size: $font-size-small;
@@ -21,6 +24,7 @@
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
 }
+
 .offer__link {
   font-family: $font-size-mini;
   line-height: $line-height-mini;
