@@ -1,5 +1,9 @@
 @import "../variables.scss";
 
+.partnership__form,
+.partnership__catalog {
+  background-color: $basic-grey;
+}
 .partnership__title {
   font-size: $font-size-mini;
   line-height: $line-height-default;

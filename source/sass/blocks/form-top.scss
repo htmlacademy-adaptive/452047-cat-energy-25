@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.form-top__title {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: $font-weight-regular;
+}
+.form-top__text {
+  text-transform: uppercase;
+  font-size: $font-size-small;
+  line-height: $line-height-average;
+  font-weight: $font-weight-regular;
+}

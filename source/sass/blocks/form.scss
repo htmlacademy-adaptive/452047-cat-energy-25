@@ -1,0 +1,67 @@
+@import "../variables.scss";
+
+.form__cat,
+.form__program,
+.form__contacts,
+.form__commentary,
+.form__additional {
+  border: none;
+}
+.form__name,
+.form__weight,
+.form__age,
+.form__text,
+.form__email,
+.form__email-input,
+.form__phone,
+.form__phone-input,
+.form__commentary-text {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-mini;
+  line-height: $line-height-average;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+.form__diet,
+.form__mass,
+.form__dont-know {
+  font-size: $font-size-mini;
+  line-height: $line-height-average;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  color: $black-grey;
+}
+.form__contacts-title,
+.form__commentary-title,
+.form__additional-title {
+  font-size: $font-size-normal;
+  line-height: $line-height-more;
+  font-weight: $font-weight-regular;
+}
+.form__sweetener,
+.form__water,
+.form__milk,
+.form__vitamins {
+  font-size: $font-size-mini;
+  line-height: $line-height-average;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+}
+.form__button {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-mini;
+  line-height: $line-height-default;
+  font-weight: $font-weight-regular;
+  color: $white;
+  background-color: $basic-green;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.form__required {
+  font-family: "Ariel", sans-serif;
+  font-size: $font-size-small;
+  line-height: $line-height-mini;
+  font-weight: $font-weight-regular;
+}
