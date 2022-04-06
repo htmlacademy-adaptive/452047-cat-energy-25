@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.partnership__form,
+.partnership__catalog {
+  background-color: $basic-grey;
+}
+
+.partnership__title {
+  font-size: $font-size-mini;
+  line-height: $line-height-default;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+}
+
+.partnership__address {
+  font-family: "Ariel", sans-serif;
+  font-size: $font-size-small;
+  line-height: $line-height-default;
+  font-weight: $font-weight-regular;
+  color: $special-dark-grey;
+}

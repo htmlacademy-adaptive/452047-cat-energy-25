@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+.additional__title {
+  font-size: $font-size-normal;
+  line-height: $line-height-normal;
+  font-weight: $font-weight-regular;
+}
+
+.additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional__item-title {
+  font-size: $font-size-mini;
+  line-height: $line-height-mini;
+  font-weight: $font-weight-regular;
+  color: $black-grey;
+}
+
+.additional__item-value,
+.additional__item-price {
+  font-family: "Ariel", sans-serif;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  font-weight: $font-weight-regular;
+}
+
+.additional__link {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-mini;
+  line-height: $line-height-default;
+  font-weight: $font-weight-regular;
+  color: $white;
+  background-color: $basic-green;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.additional__gift {
+  background-color: $basic-green;
+}
+
+.additional__gift-text {
+  font-family: "Ariel", sans-serif;
+  font-size: $font-size-mini;
+  line-height: $line-height-default;
+  font-weight: $font-weight-regular;
+  color: $white;
+}
