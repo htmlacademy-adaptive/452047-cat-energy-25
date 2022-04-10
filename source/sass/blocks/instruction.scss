@@ -1,21 +1,93 @@
 @import "../variables.scss";
 
+.instruction {
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  min-height: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.instruction__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+  }
+}
+
 .instruction__title {
   font-size: $font-size-big;
   line-height: $line-height-super;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+  }
 }
 
 .instruction__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.instruction__item {
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+}
+
+.instruction__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    height: 280px;
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 
 .instruction__text {
+  width: 176px;
   font-family: "Ariel", sans-serif;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: $font-size-mini;
+    line-height: $line-height-normal;
+  }
 }

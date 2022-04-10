@@ -3,25 +3,102 @@
 .index-top {
   background-color: $basic-green;
   color: $white;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    background-color: $white;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.index-top__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+  }
+}
+
+.index-top__wrapper img {
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
 }
 
 .index-top__title {
+  width: 280px;
   font-size: $font-size-big;
   line-height: $line-height-big;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    padding-left: 87px;
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .index-top__text {
   font-size: $font-size-small;
   line-height: $line-height-small;
+  font-weight: $font-weight-regular;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .index-top__link {
+  width: 280px;
+  font-family: "Oswald", sans-serif;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
   color: $white;
+  background-color: $basic-green;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin-left: 87px;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }

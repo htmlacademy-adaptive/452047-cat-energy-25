@@ -1,8 +1,60 @@
 @import "../variables.scss";
 
+.partnership {
+  background-color: $white;
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  min-height: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: $background-grey-2;
+  }
+}
+
+.partnership__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+  }
+}
+
 .partnership__form,
 .partnership__catalog {
   background-color: $basic-grey;
+}
+
+.partnership__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 405px;
+    padding: 60px 80px 56px;
+    background-color: $white;
+  }
 }
 
 .partnership__title {
@@ -10,12 +62,33 @@
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    font-size: $font-size-default;
+    line-height: $line-height-more;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
 }
 
 .partnership__address {
+  width: 140px;
   font-family: "Ariel", sans-serif;
   font-size: $font-size-small;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    font-size: $font-size-mini;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 155px;
+  }
 }
