@@ -2,23 +2,24 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи Логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+      <div class="main-header__wrapper">
+        <div class="main-header__top">
+          <a class="main-header__logo">
+            <img src="img/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи Логотип">
+          </a>
+          <a class="main-header__cat-energy" href="#">
+            <img src="img/cat-energy-logo.svg" width="101" height="18" alt="Кэт Энерджи">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">
-                <img src="img/cat-energy-logo.svg" width="101" height="18" alt="Кэт Энерджи">
-              </a>
-            </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">Главная</a>
             </li>
@@ -29,8 +30,8 @@
               <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Кэт Энерджи</h1>
@@ -139,20 +140,26 @@
           </div>
           <div class="example__cat">
             <img src="img/cat-before-mobile.png" width="280" height="232" alt="Было">
-            <button class="example__cat-button example__cat-button--before">Было</button>
-            <button class="example__cat-button example__cat-button--after">Стало</button>
+            <div class="example__toggles">
+              <button class="example__button example__button--before">Было</button>
+              <button class="example__button example__button--after">Стало</button>
+            </div>
+
           </div>
         </div>
       </section>
       <section class="partnership">
         <h2 class="visually-hidden">Сотрудничество</h2>
         <div class="partnership__wrapper">
-          <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="partnership__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <div class="partnership__block">
+            <h3 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+            <p class="partnership__address">ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </div>
         </div>
-        <div class="partnership__map">Здесь должна быть карта
+        <div class="partnership__map">
+          <span class="visually-hidden">карта гугл</span>
         </div>
       </section>
     </main>

@@ -1,13 +1,91 @@
 @import "../variables.scss";
 
+.offer {
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  min-height: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.offer__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+  }
+}
+
 .offer__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .offer__item {
   background-color: $basic-grey;
+}
+
+.offer__item-wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: start;
+    height: 372px;
+    padding-left: 52px;
+    padding-right: 62px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    padding-right: 51px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.offer__item-wrapper img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 .offer__title {
@@ -15,6 +93,15 @@
   line-height: $line-height-mega;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-big;
+    line-height: $line-height-big;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 142px;
+  }
 }
 
 .offer__text {
@@ -23,12 +110,33 @@
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: $font-size-mini;
+    line-height: $line-height-normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+  }
 }
 
 .offer__link {
   font-family: $font-size-mini;
   line-height: $line-height-mini;
+  font-weight: $font-weight-regular;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    font-family: $font-size-default;
+    line-height: $line-height-normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 165px;
+  }
 }
