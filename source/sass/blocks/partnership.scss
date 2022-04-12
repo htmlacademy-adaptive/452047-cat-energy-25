@@ -6,7 +6,7 @@
   margin: 0;
   display: block;
   box-sizing: border-box;
-  min-height: 320px;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
