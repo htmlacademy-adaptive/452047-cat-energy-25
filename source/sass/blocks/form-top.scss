@@ -1,14 +1,69 @@
 @import "../variables.scss";
 
+.form-top {
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-top__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0;
+    margin: auto;
+  }
+}
+
 .form-top__title {
   font-size: $font-size-big;
   line-height: $line-height-big;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .form-top__text {
+  width: 226px;
   text-transform: uppercase;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    padding-left: 39px;
+    font-size: $font-size-default;
+    line-height: $line-height-tall;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
