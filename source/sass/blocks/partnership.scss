@@ -33,6 +33,7 @@
     width: 1200px;
     padding: 0 10px;
     margin: auto;
+    position: relative;
   }
 }
 
@@ -51,6 +52,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 0;
     width: 405px;
     padding: 60px 80px 56px;
     background-color: $white;
@@ -90,5 +94,35 @@
 
   @media (min-width: $desktop-width) {
     width: 155px;
+  }
+}
+
+.partnership__map {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.partnership__map iframe {
+  display: block;
+  border: none;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 400px;
   }
 }

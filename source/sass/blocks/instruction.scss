@@ -5,7 +5,7 @@
   margin: 0;
   display: block;
   box-sizing: border-box;
-  min-height: 320px;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -37,6 +37,8 @@
   font-size: $font-size-big;
   line-height: $line-height-super;
   font-weight: $font-weight-regular;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;
@@ -58,8 +60,34 @@
 }
 
 .instruction__item {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
+
+    &--one {
+      background-image: url("../../img/instruction-1.svg");
+      background-repeat: no-repeat;
+      background-position: right 50px top;
+    }
+
+    &--two {
+      background-image: url("../../img/instruction-2.svg");
+      background-repeat: no-repeat;
+      background-position: right 20px top;
+    }
+
+    &--three {
+      background-image: url("../../img/instruction-3.svg");
+      background-repeat: no-repeat;
+      background-position: right 10px top;
+    }
+
+    &--four {
+      background-image: url("../../img/instruction-4.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
   }
 }
 
@@ -78,16 +106,18 @@
 }
 
 .instruction__text {
-  width: 176px;
+  width: 200px;
   font-family: "Ariel", sans-serif;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 245px;
     font-size: $font-size-mini;
     line-height: $line-height-normal;
+    padding-top: 30px;
   }
 }
