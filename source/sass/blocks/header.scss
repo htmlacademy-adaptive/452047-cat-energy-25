@@ -184,13 +184,15 @@
       border-bottom: 2px solid $basic-green;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .site-list__item--index .site-list__link {
     color: $white;
+  }
 
-    &--active {
-      border-bottom: 2px solid $white;
-    }
+  .site-list__item--index .site-list__link--active {
+    border-bottom: 2px solid $white;
   }
 }
 
