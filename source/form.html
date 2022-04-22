@@ -44,9 +44,10 @@
         </div>
       </section>
       <section class="selection">
+        <h2 class="visually-hidden">Выбор программы</h2>
         <div class="selection__wrapper">
             <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="form__cat">
+              <div class="form__cat">
                 <div class="form__block">
                   <label class="form__name" for="cat-name">Имя:*</label>
                   <input class="form__text form__text--name" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
@@ -59,32 +60,34 @@
                   <label class="form__age" for="cat-age">Возраст (лет):</label>
                   <input class="form__text form__text--age" type="text" id="cat-age" name="cat-age" placeholder="7">
                 </div>
-              </fieldset>
-              <fieldset class="form__program">
+              </div>
+              <div class="form__program">
                 <input class="form__input-radio visually-hidden" type="radio" name="program" id="diet" value="diet" checked>
                 <label class="form__label form__label-radio form__label--diet" for="diet">Похудение</label>
                 <input class="form__input-radio visually-hidden" type="radio" name="program" id="mass" value="mass">
                 <label class="form__label form__label-radio form__label--mass" for="mass">Набор массы</label>
                 <input class="form__input-radio visually-hidden" type="radio" name="program" id="dont-know" value="dont-know">
                 <label class="form__label form__label-radio form__label--dont-know" for="dont-know">Не знаю (нужен ваш совет)</label>
-              </fieldset>
-              <fieldset class="form__contacts">
-                <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
-                <div class="form__block form__block--email">
-                  <label class="form__email" for="email">E-mail:*</label>
-                  <input class="form__text form__text--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+              </div>
+              <div class="form__contacts">
+                <h3 class="form__contacts-title">Контактные данные (владельца кота)</h3>
+                <div class="form__contacts-blocks">
+                  <div class="form__block form__block--email">
+                    <label class="form__email" for="email">E-mail:*</label>
+                    <input class="form__text form__text--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  </div>
+                  <div class="form__block form__block--phone">
+                    <label class="form__phone" for="email">Телефон:*</label>
+                    <input class="form__text form__text--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                  </div>
                 </div>
-                <div class="form__block form__block--phone">
-                  <label class="form__phone" for="email">Телефон:*</label>
-                  <input class="form__text form__text--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                </div>
-              </fieldset>
-              <fieldset class="form__commentary">
-                <legend class="form__commentary-title">Комментарий</legend>
+              </div>
+              <div class="form__commentary">
+                <h3 class="form__commentary-title">Комментарий</h3>
                 <textarea class="form__commentary-text" id="comment" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </fieldset>
-              <fieldset class="form__additional">
-                <legend class="form__additional-title">Дополнительно</legend>
+              </div>
+              <div class="form__additional">
+                <h3 class="form__additional-title">Дополнительно</h3>
                 <div class="form__checkboxes">
                   <div class="form__checkbox-block">
                     <input class="form__input-checkbox visually-hidden" type="checkbox" name="add-sweetener" id="sweetener" value="sweetener" checked>
@@ -103,7 +106,7 @@
                     <label class="form__label form__label-checkbox form__label--vitamins" for="vitamins">Витамины</label>
                   </div>
                 </div>
-              </fieldset>
+              </div>
               <div class="form__bottom">
                 <button class="form__button" type="submit">Отправить заявку</button>
                 <span class="form__required">* — Обязательные поля</span>

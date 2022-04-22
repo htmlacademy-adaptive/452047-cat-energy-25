@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -16,6 +17,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .form__name,
@@ -44,10 +46,75 @@
   font-size: $font-size-normal;
   line-height: $line-height-more;
   font-weight: $font-weight-regular;
+  background-color: $white;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-big;
     line-height: $line-height-big;
+  }
+}
+
+.form__contacts::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $basic-green;
+  top: 43px;
+  right: -20px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    top: 92px;
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form__commentary::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $basic-green;
+  top: 25px;
+  right: -20px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    top: 85px;
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form__additional::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $basic-green;
+  top: 38px;
+  right: -20px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    top: 87px;
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -190,6 +257,34 @@
   }
 }
 
+.form__program::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: 10px;
+  left: -20px;
+  background-color: $background-grey-1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__program::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  bottom: -20px;
+  left: -20px;
+  background-color: $background-grey-1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .form__label-radio::before {
   position: absolute;
   content: "";
@@ -259,6 +354,12 @@
 
 .form__contacts {
   @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__contacts-blocks {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -269,12 +370,17 @@
 
 .form__contacts-title {
   padding-top: 26px;
+  margin: 0;
   margin-bottom: 35px;
+  width: 187px;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
     padding-top: 71px;
     padding-left: 39px;
     margin-bottom: 76px;
+    width: 515px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -284,10 +390,6 @@
 }
 
 .form__commentary {
-  @media (min-width: $tablet-width) {
-    padding-left: 39px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 100%;
     padding: 0;
@@ -296,11 +398,19 @@
 
 .form__commentary-title {
   padding-top: 10px;
+  padding-right: 14px;
+  margin: 0;
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     margin-bottom: 76px;
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -319,19 +429,17 @@
     width: 630px;
     padding-top: 10px;
     padding-left: 19px;
+    margin-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-left: 0;
   }
 }
 
 .form__additional {
   margin-bottom: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 39px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -341,11 +449,19 @@
 
 .form__additional-title {
   padding-top: 23px;
+  padding-right: 14px;
+  margin: 0;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     margin-bottom: 60px;
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -355,10 +471,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
+    margin-left: 0;
   }
 }
 
