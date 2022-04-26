@@ -72,6 +72,7 @@
     padding-left: 52px;
     padding-right: 62px;
     padding-bottom: 53px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,17 +89,63 @@
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: 100px;
-    left: 500px;
+    position: absolute;
+    top: 80px;
+    left: 450px;
     padding-top: 0;
+
+    &--pro {
+      left: 410px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 150px;
     position: relative;
     top: 40px;
-    left: 30px;
+    left: 0;
+
+    &--pro {
+      top: 45px;
+      left: -20px;
+    }
+  }
+}
+
+.offer__image--mobile {
+  @media (max-width: $mobile-only-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.offer__image--tablet {
+  @media (max-width: $mobile-only-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.offer__image--desktop {
+  @media (max-width: $mobile-only-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -113,12 +160,11 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-big;
     line-height: $line-height-big;
-    padding-top: 0;
+    padding-top: 77px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 100px;
-    padding-top: 77px;
   }
 }
 
@@ -157,22 +203,18 @@
 
   @media (min-width: $desktop-width) {
     width: 470px;
+    padding-top: 73px;
   }
 }
 
 .offer__link {
-  font-family: $font-size-mini;
-  line-height: $line-height-mini;
-  font-weight: $font-weight-regular;
-  text-transform: uppercase;
   text-decoration: none;
-  color: $black;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 165px;
     font-family: $font-size-default;
-    line-height: $line-height-normal;
+    line-height: $line-height-tall;
   }
 
   @media (min-width: $desktop-width) {
@@ -181,6 +223,11 @@
 }
 
 .offer__link-title {
+  font-size: $font-size-mini;
+  line-height: $line-height-mini;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  color: $black;
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
