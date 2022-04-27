@@ -29,15 +29,6 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    background-image: url("../../img/index-background-desktop.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 720px 694px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-desktop@2x.png");
-      background-size: 720px 694px;
-    }
   }
 }
 
@@ -52,14 +43,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1220px;
     height: 550px;
     padding: 0 10px;
     margin: auto;
     position: relative;
     top: -117px;
-    left: 0;
     padding-top: 144px;
+    background-image: url("../../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 720px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-desktop@2x.png");
+      background-size: 720px 694px;
+    }
   }
 }
 
