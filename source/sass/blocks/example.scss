@@ -11,11 +11,12 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
     background-color: $white;
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    background-color: $background-grey-2;
   }
 }
 
@@ -42,6 +43,18 @@
   }
 }
 
+.example::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 462px;
+    bottom: 0;
+    background-color: $background-grey-2;
+    z-index: -1;
+  }
+}
+
 .example__title {
   font-size: $font-size-big;
   line-height: $line-height-super;
@@ -53,6 +66,11 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;
     line-height: $line-height-tablet;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -200,13 +218,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 680px;
+    padding-top: 0;
   }
 }
 
@@ -215,6 +234,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__button {
@@ -226,4 +254,9 @@
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-default;
+    line-height: $line-height-tall;
+  }
 }
