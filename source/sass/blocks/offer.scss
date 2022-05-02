@@ -234,3 +234,13 @@
     padding-right: 25px;
   }
 }
+
+.offer__link-arrow {
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.33s;
+}
+
+.offer__link:hover .offer__link-arrow {
+  transform: scaleX(1.4);
+}
