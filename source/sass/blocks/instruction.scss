@@ -69,29 +69,67 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    position: relative;
+    z-index: 1;
 
-    &--one {
-      background-image: url("../../img/instruction-1.svg");
-      background-repeat: no-repeat;
-      background-position: right 50px top;
+    &--one::before {
+      position: absolute;
+      content: "1";
+      color: $basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: $font-weight-regular;
+      width: 71px;
+      height: 280px;
+      top: -40px;
+      right: 60px;
+      z-index: 1;
     }
 
-    &--two {
-      background-image: url("../../img/instruction-2.svg");
-      background-repeat: no-repeat;
-      background-position: right 20px top;
+    &--two::before {
+      position: absolute;
+      content: "2";
+      color: $basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: $font-weight-regular;
+      width: 134px;
+      height: 280px;
+      top: -40px;
+      right: 0;
+      z-index: 1;
     }
 
-    &--three {
-      background-image: url("../../img/instruction-3.svg");
-      background-repeat: no-repeat;
-      background-position: right 10px top;
+    &--three::before {
+      position: absolute;
+      content: "3";
+      color: $basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: $font-weight-regular;
+      width: 134px;
+      height: 280px;
+      top: -40px;
+      right: 0;
+      z-index: 1;
     }
 
-    &--four {
-      background-image: url("../../img/instruction-4.svg");
-      background-repeat: no-repeat;
-      background-position: right top;
+    &--four::before {
+      position: absolute;
+      content: "4";
+      color: $basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: $font-weight-regular;
+      width: 134px;
+      height: 280px;
+      top: -40px;
+      right: 0;
+      z-index: 1;
     }
   }
 }
@@ -176,6 +214,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 2;
     width: 245px;
     font-size: $font-size-mini;
     line-height: $line-height-normal;
