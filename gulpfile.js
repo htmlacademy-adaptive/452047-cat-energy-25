@@ -69,8 +69,13 @@ export const createWebp = () => {
 
 // SVG
 
+const svg = () =>
+  gulp.src(['source/img/background-svg/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+
 const sprite = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -137,6 +142,7 @@ export const build = gulp.series (
     styles,
     html,
     scripts,
+    svg,
     sprite,
     createWebp
   ),
@@ -152,6 +158,7 @@ export default gulp.series (
     styles,
     html,
     scripts,
+    svg,
     sprite,
     createWebp
   ),
