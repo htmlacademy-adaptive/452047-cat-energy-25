@@ -13,10 +13,12 @@
     background-color: $white;
     position: relative;
     z-index: 1;
+    border-top: 1px solid $border-nav;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    border-top: none;
   }
 }
 
@@ -35,8 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 0 10px;
+    width: 1220px;
+    padding: 0;
     margin: auto;
     flex-direction: column;
     position: relative;
@@ -66,10 +68,12 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;
     line-height: $line-height-tablet;
-    margin-bottom: 63px;
+    padding-top: 43px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 70px;
     margin-bottom: 146px;
   }
 }
@@ -92,12 +96,13 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin-bottom: 68px;
   }
 }
 
 .example__result {
   @media (min-width: $tablet-width) {
-    width: 360px;
+    width: 366px;
   }
 }
 
@@ -140,6 +145,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-more;
     line-height: $line-height-mega;
+    padding-bottom: 18px;
   }
 }
 
@@ -163,7 +169,7 @@
     line-height: $line-height-small;
     background-color: $white;
     width: 127px;
-    top: 59px;
+    top: 61px;
     left: 17px;
   }
 
@@ -172,10 +178,17 @@
   }
 }
 
+.example__result-time {
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    left: 10px;
+  }
+}
+
 .example__spent {
   padding-top: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -188,7 +201,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 360px;
-    padding-top: 55px;
+    padding-top: 60px;
     margin-bottom: 75px;
   }
 }
@@ -207,8 +220,13 @@
 }
 
 .example__spent-value {
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    padding-top: 0;
+    padding-right: 34px;
   }
 }
 
@@ -218,13 +236,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
-    left: 680px;
+    top: 28px;
+    left: 628px;
     padding-top: 0;
   }
 }
@@ -234,14 +252,78 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 42px;
+  padding-left: 33px;
+  padding-right: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+    padding-bottom: 0;
     margin-bottom: 56px;
+    padding-left: 15px;
+    padding-right: 8px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+  }
+}
+
+.example__bar {
+  width: 86px;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $special-grey;
+  border-radius: 10px;
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    background-color: $special-grey;
+    border-radius: 6px;
+    position: relative;
+    top: 8px;
+    left: 0;
+  }
+}
+
+.example__toogle-bar {
+  width: 36px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: $basic-green;
+  position: relative;
+  top: 4px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      top: -18px;
+      left: 190px;
+      background-color: $white;
+      border: 1px solid $special-grey;
+      border-radius: 50%;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: -5px;
+      left: 203px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -258,5 +340,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-default;
     line-height: $line-height-tall;
+    border-bottom: 1px dotted rgba($color: $black, $alpha: 0.4);
+    padding: 0;
   }
 }

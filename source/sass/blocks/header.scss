@@ -37,8 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 0 10px;
+    width: 1220px;
+    padding: 0;
     margin: auto;
   }
 }
@@ -231,7 +231,7 @@
     line-height: $line-height-normal;
     font-weight: $font-weight-regular;
     padding-top: 18px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
 
     &--active {
       border-bottom: 2px solid $basic-green;
@@ -241,6 +241,8 @@
   @media (min-width: $desktop-width) {
     font-size: $font-size-default;
     line-height: $line-height-tall;
+    padding-top: 16px;
+    padding-bottom: 5px;
   }
 }
 
