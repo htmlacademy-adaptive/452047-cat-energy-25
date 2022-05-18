@@ -66,17 +66,17 @@
 .additional__wrapper::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 300px;
   height: 2px;
   background-color: $basic-green;
   top: 33px;
-  right: -20px;
+  left: 20px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     top: 90px;
-    right: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {

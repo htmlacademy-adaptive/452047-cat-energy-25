@@ -112,6 +112,10 @@
     &--more {
       margin-bottom: 0;
     }
+
+    &--more {
+      width: 241px;
+    }
   }
 }
 
@@ -135,18 +139,30 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .catalog__image {
   display: block;
   position: relative;
 
-  &--chicken500,
-  &--fish500,
-  &--buckwheat500,
-  &--rice500 {
+  &--chicken500 {
     top: 24px;
     left: 36px;
+  }
+
+  &--fish500,
+  &--buckwheat500 {
+    top: 40px;
+    left: 36px;
+  }
+
+  &--rice500 {
+    top: 34px;
+    left: 34px;
   }
 
   &--chicken1000,
@@ -170,8 +186,25 @@
     &--chicken1000,
     &--fish1000,
     &--buckwheat1000 {
-      top: -66px;
+      top: -69px;
       left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--chicken500,
+    &--fish500,
+    &--buckwheat500,
+    &--rice500 {
+      top: -52px;
+      left: 43px;
+    }
+
+    &--chicken1000,
+    &--fish1000,
+    &--buckwheat1000 {
+      top: -77px;
+      left: 43px;
     }
   }
 }
