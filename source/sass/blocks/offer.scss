@@ -27,8 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 0 10px;
+    width: 1220px;
+    padding: 0;
     margin: auto;
   }
 }
@@ -71,12 +71,12 @@
     flex-direction: column;
     padding-left: 52px;
     padding-right: 62px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    width: 460px;
+    width: 467px;
     padding-right: 51px;
     flex-direction: row;
     justify-content: space-between;
@@ -85,8 +85,14 @@
 }
 
 .offer__image {
-  width: 90px;
+  width: 70px;
   padding-top: 21px;
+
+  &--pro {
+    position: relative;
+    top: 3px;
+    left: -7px;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -95,6 +101,7 @@
     padding-top: 0;
 
     &--pro {
+      top: 90px;
       left: 410px;
     }
   }
@@ -164,7 +171,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 100px;
+    padding-right: 140px;
+
+    &--pro {
+      padding-right: 100px;
+    }
   }
 }
 
@@ -179,18 +190,8 @@
   padding-top: 20px;
   margin-bottom: 38px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 130px;
-    left: 0;
-    width: 240px;
-    height: 1px;
-    background-color: $background-grey-1;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  &--pro {
+    padding-top: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -198,12 +199,13 @@
     font-size: $font-size-mini;
     line-height: $line-height-normal;
     padding-top: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 470px;
     padding-top: 73px;
+    margin-bottom: 26px;
   }
 }
 
@@ -213,12 +215,24 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
-    font-family: $font-size-default;
-    line-height: $line-height-tall;
   }
 
   @media (min-width: $desktop-width) {
     width: 165px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -17px;
+    left: 0;
+    width: 240px;
+    height: 1px;
+    background-color: $background-grey-1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -231,6 +245,8 @@
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: $font-size-default;
+    line-height: $line-height-tall;
     padding-right: 25px;
   }
 }
@@ -239,8 +255,16 @@
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.33s;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
 }
 
 .offer__link:hover .offer__link-arrow {
   transform: scaleX(1.4);
+}
+
+.offer__link:active {
+  opacity: 0.3;
 }
