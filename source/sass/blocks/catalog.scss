@@ -389,6 +389,7 @@
   margin-top: 21px;
   margin-bottom: 33px;
   padding: 10px 0;
+  cursor: pointer;
 
   &--more {
     color: $special-dark-grey;
@@ -416,4 +417,24 @@
       margin-bottom: 38px;
     }
   }
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  background-color: $basic-green-hover;
+}
+
+.catalog__link--more:hover,
+.catalog__link--more:focus {
+  background-color: $basic-grey-hover;
+}
+
+.catalog__link:active {
+  color: rgba($color: $white, $alpha: 0.3);
+  background-color: $basic-green-hover;
+}
+
+.catalog__link--more:active {
+  color: rgba($color: $special-dark-grey, $alpha: 0.3);
+  background-color: $basic-grey;
 }

@@ -161,3 +161,13 @@
     top: 455px;
   }
 }
+
+.index-top__link:hover,
+.index-top__link:focus {
+  background-color: $basic-green-hover;
+}
+
+.index-top__link:active {
+  color: rgba($color: $white, $alpha: 0.3);
+  background-color: $basic-green-hover;
+}

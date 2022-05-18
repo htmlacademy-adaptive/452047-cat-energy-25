@@ -264,10 +264,21 @@
   text-decoration: none;
   width: 100%;
   padding: 10px 0;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 244px;
   }
+}
+
+.additional__link:hover,
+.additional__link:focus {
+  background-color: $basic-green-hover;
+}
+
+.additional__link:active {
+  color: rgba($color: $white, $alpha: 0.3);
+  background-color: $basic-green-hover;
 }
 
 .additional__gift {

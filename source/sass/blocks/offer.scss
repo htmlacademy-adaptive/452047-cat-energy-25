@@ -264,3 +264,7 @@
 .offer__link:hover .offer__link-arrow {
   transform: scaleX(1.4);
 }
+
+.offer__link:active {
+  opacity: 0.3;
+}

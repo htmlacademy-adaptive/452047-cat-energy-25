@@ -297,6 +297,7 @@
   position: relative;
   top: 4px;
   left: 7px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -327,6 +328,15 @@
   }
 }
 
+.example__toogle-bar:hover::before {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+}
+
+.example__toogle-bar:active::before {
+  border: 1px solid $basic-green;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+}
+
 .example__button {
   font-family: "Oswald", sans-serif;
   background-color: transparent;
@@ -336,6 +346,7 @@
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-default;
@@ -343,4 +354,13 @@
     border-bottom: 1px dotted rgba($color: $black, $alpha: 0.4);
     padding: 0;
   }
+}
+
+.example__button:hover,
+.example__button:focus {
+  border-bottom: 1px solid rgba($color: $black, $alpha: 0.4);
+}
+
+.example__button:active {
+  border-bottom: transparent;
 }

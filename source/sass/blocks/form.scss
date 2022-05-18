@@ -254,6 +254,37 @@
   }
 }
 
+.form__text:hover,
+.form__commentary-text:hover {
+  border: 1px solid $special-grey;
+}
+
+.form__text:focus,
+.form__commentary-text:focus {
+  border: 1px solid $special-dark-grey;
+}
+
+.form__text:invalid,
+.form__commentary-text:invalid {
+  border: 1px solid $error;
+}
+
+.form__text--email:focus {
+  background-image: url("../../img/icon-email-focus.svg");
+}
+
+.form__text--phone:focus {
+  background-image: url("../../img/icon-phone-focus.svg");
+}
+
+.form__text--email:invalid {
+  background-image: url("../../img/icon-email-error.svg");
+}
+
+.form__text--phone:invalid {
+  background-image: url("../../img/icon-phone-error.svg");
+}
+
 .form__program {
   padding-top: 39px;
   position: relative;
@@ -331,10 +362,11 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: 6px;
-    left: 39px;
+    top: 5px;
+    left: 38px;
   }
 }
+
 
 .form__label {
   font-size: $font-size-mini;
@@ -345,6 +377,7 @@
   position: relative;
   padding-left: 45px;
   margin-bottom: 25px;
+  cursor: pointer;
 
   &--diet,
   &--mass,
@@ -561,6 +594,16 @@
   }
 }
 
+.form__label-radio:hover::before,
+.form__label-checkbox:hover::before {
+  border: 1px solid $check-hover;
+}
+
+.form__input-radio:disabled + .form__label-radio,
+.form__input-checkbox:disabled + .form__label-checkbox {
+  opacity: 0.3;
+}
+
 .form__bottom {
   margin-top: 38px;
   box-sizing: border-box;
@@ -593,6 +636,7 @@
   width: 280px;
   padding: 10px 0;
   margin-bottom: 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-default;
@@ -605,6 +649,16 @@
     width: 568px;
     margin-bottom: 82px;
   }
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: $basic-green-hover;
+}
+
+.form__button:active {
+  color: rgba($color: $white, $alpha: 0.3);
+  background-color: $basic-green-hover;
 }
 
 .form__required {
