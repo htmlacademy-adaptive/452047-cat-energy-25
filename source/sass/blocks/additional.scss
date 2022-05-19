@@ -231,7 +231,7 @@
 
 .additional__item-value,
 .additional__item-price {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-small;
   font-weight: $font-weight-regular;
@@ -253,7 +253,8 @@
 }
 
 .additional__link {
-  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-family: $font-oswald;
   font-size: $font-size-mini;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
@@ -288,12 +289,12 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 36px;
-  background-image: url("../../img/catalog-background.png");
+  background-image: url("../../img/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 279px 289px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog-background@2x.png");
+    background-image: url("../../img/catalog-background@2x.jpg");
     background-size: 279px auto;
   }
 
@@ -303,11 +304,11 @@
     padding: 0 50px;
     height: 200px;
     margin-bottom: 75px;
-    background-image: url("../../img/catalog-background-tablet.png");
+    background-image: url("../../img/catalog-background-tablet.jpg");
     background-size: auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/catalog-background-tablet@2x.png");
+      background-image: url("../../img/catalog-background-tablet@2x.jpg");
       background-size: 707px auto;
     }
   }
@@ -319,11 +320,12 @@
     width: 245px;
     height: 288px;
     padding: 0;
-    background-image: url("../../img/catalog-background.png");
+    background-image: url("../../img/catalog-background.jpg");
     background-size: 279px 289px;
+    background-position: right;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/catalog-background@2x.png");
+      background-image: url("../../img/catalog-background@2x.jpg");
       background-size: 279px auto;
       background-position: right;
     }
@@ -349,7 +351,7 @@
 }
 
 .additional__gift-text {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-mini;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;

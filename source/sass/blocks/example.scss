@@ -79,7 +79,7 @@
 }
 
 .example__text {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
@@ -154,7 +154,7 @@
   content: "";
   text-align: center;
   background-color: $background-grey-2;
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-tiny;
   line-height: $line-height-tiny;
   font-weight: $font-weight-regular;
@@ -338,7 +338,7 @@
 }
 
 .example__button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-oswald;
   background-color: transparent;
   border: none;
   box-sizing: border-box;
