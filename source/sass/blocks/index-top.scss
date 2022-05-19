@@ -10,12 +10,12 @@
   margin-bottom: 20px;
 
   @media (max-width: $mobile-only-width) {
-    background-image: url("../../img/index-background-mobile.png");
+    background-image: url("../../img/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-mobile@2x.png");
+      background-image: url("../../img/index-background-mobile@2x.jpg");
       background-size: 320px auto;
     }
   }
@@ -51,13 +51,13 @@
     margin: auto;
     top: -112px;
     padding-top: 144px;
-    background-image: url("../../img/index-background-desktop.png");
+    background-image: url("../../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-desktop@2x.png");
+      background-image: url("../../img/index-background-desktop@2x.jpg");
       background-size: 720px 694px;
     }
   }
@@ -131,7 +131,7 @@
 
 .index-top__link {
   width: 280px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-oswald;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;

@@ -301,7 +301,7 @@
 .catalog__item-feature,
 .catalog__item-value,
 .catalog__item-text {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-tiny;
   line-height: $line-height-mini;
   font-weight: $font-weight-regular;
@@ -376,7 +376,8 @@
 }
 
 .catalog__link {
-  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-family: $font-oswald;
   font-size: $font-size-mini;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;

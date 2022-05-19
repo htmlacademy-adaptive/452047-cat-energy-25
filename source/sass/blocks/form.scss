@@ -27,7 +27,7 @@
 .form__email,
 .form__phone,
 .form__commentary-text {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-oswald;
   font-size: $font-size-mini;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;
@@ -400,6 +400,11 @@
   }
 }
 
+.form__input-radio:focus + .form__label-radio::before,
+.form__input-checkbox:focus + .form__label-checkbox::before {
+  outline: 2px solid $black;
+}
+
 .form__contacts {
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -624,7 +629,7 @@
 
 .form__button {
   display: inline-block;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-oswald;
   font-size: $font-size-mini;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
@@ -663,7 +668,7 @@
 
 .form__required {
   display: block;
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-mini;
   font-weight: $font-weight-regular;

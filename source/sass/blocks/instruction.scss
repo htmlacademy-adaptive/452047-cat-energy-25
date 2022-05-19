@@ -87,7 +87,7 @@
       position: absolute;
       content: "1";
       color: $basic-grey;
-      font-family: "Oswald", sans-serif;
+      font-family: $font-oswald;
       font-size: 280px;
       line-height: 280px;
       font-weight: $font-weight-regular;
@@ -102,7 +102,7 @@
       position: absolute;
       content: "2";
       color: $basic-grey;
-      font-family: "Oswald", sans-serif;
+      font-family: $font-oswald;
       font-size: 280px;
       line-height: 280px;
       font-weight: $font-weight-regular;
@@ -117,7 +117,7 @@
       position: absolute;
       content: "3";
       color: $basic-grey;
-      font-family: "Oswald", sans-serif;
+      font-family: $font-oswald;
       font-size: 280px;
       line-height: 280px;
       font-weight: $font-weight-regular;
@@ -132,7 +132,7 @@
       position: absolute;
       content: "4";
       color: $basic-grey;
-      font-family: "Oswald", sans-serif;
+      font-family: $font-oswald;
       font-size: 280px;
       line-height: 280px;
       font-weight: $font-weight-regular;
@@ -230,7 +230,7 @@
 
 .instruction__text {
   width: 200px;
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-average;
   font-weight: $font-weight-regular;

@@ -37,8 +37,8 @@
   }
 }
 
-.partnership__form,
-.partnership__catalog {
+.partnership--form,
+.partnership--catalog {
   background-color: $basic-grey;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .partnership__address-street {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
@@ -122,7 +122,7 @@
 }
 
 .partnership__address-city {
-  font-family: "Ariel", sans-serif;
+  font-family: $font-arial;
   font-size: $font-size-small;
   line-height: $line-height-default;
   font-weight: $font-weight-regular;
