@@ -321,13 +321,13 @@
   }
 }
 
-.catalog__plus--mobile {
+.catalog__svg--mobile {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.catalog__plus--tablet {
+.catalog__svg--tablet {
   @media (max-width: $mobile-only-width) {
     display: none;
   }
