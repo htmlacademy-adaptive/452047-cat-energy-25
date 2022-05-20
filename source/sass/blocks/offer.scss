@@ -118,7 +118,7 @@
   }
 }
 
-.offer__image--mobile {
+.offer__svg--mobile {
   @media (max-width: $mobile-only-width) {
     display: block;
   }
@@ -128,7 +128,7 @@
   }
 }
 
-.offer__image--tablet {
+.offer__svg--tablet {
   @media (max-width: $mobile-only-width) {
     display: none;
   }
@@ -142,7 +142,7 @@
   }
 }
 
-.offer__image--desktop {
+.offer__svg--desktop {
   @media (max-width: $mobile-only-width) {
     display: none;
   }
