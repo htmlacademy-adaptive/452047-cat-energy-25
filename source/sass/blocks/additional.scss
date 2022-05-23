@@ -6,6 +6,7 @@
   display: block;
   box-sizing: border-box;
   min-width: 320px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -63,26 +64,23 @@
   }
 }
 
-.additional__wrapper::before {
+.additional::before {
   position: absolute;
   content: "";
-  width: 300px;
+  width: 65%;
   height: 2px;
   background-color: $basic-green;
   top: 33px;
-  left: 20px;
+  right: 0;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 100%;
     top: 90px;
-    left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     top: 95px;
-    left: 0;
   }
 }
 
@@ -344,9 +342,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
+    padding-top: 57px;
     padding-left: 0;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 }
 
@@ -357,6 +355,7 @@
   font-weight: $font-weight-regular;
   color: $white;
   text-align: center;
+  word-wrap: break-word;
   width: 161px;
   margin: 0;
   margin-bottom: 43px;

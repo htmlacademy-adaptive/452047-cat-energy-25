@@ -76,9 +76,16 @@
 
 .instruction__item {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    height: 280px;
+    flex-direction: column;
+    justify-content: start;
     position: relative;
     z-index: 1;
     margin-bottom: 38px;
@@ -150,29 +157,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 240px;
     margin-bottom: 0;
   }
 }
 
-.instruction__item-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-    height: 280px;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 240px;
-  }
-}
-
-.instruction__picture {
+.instruction__image {
   display: block;
   width: 60px;
   height: 60px;
@@ -182,50 +172,50 @@
     width: 80px;
     height: 80px;
   }
-}
 
-.instruction__image {
   &--leaf {
+    background-image: url("../../img/icon-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: left 17px top 16px;
     position: relative;
-    top: 14px;
-    left: 15px;
 
     @media (min-width: $tablet-width) {
-      top: 25px;
-      left: 24px;
+      background-position: left 26px top 25px;
     }
   }
 
   &--tub {
+    background-image: url("../../img/icon-tub.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px top 13px;
     position: relative;
-    top: 13px;
-    left: 15px;
 
     @media (min-width: $tablet-width) {
-      top: 24px;
-      left: 25px;
+      background-position: left 26px top 25px;
     }
   }
 
   &--eat {
+    background-image: url("../../img/icon-eat.svg");
+    background-repeat: no-repeat;
+    background-position: left 17px top 15px;
     position: relative;
-    top: 15px;
-    left: 18px;
+
 
     @media (min-width: $tablet-width) {
-      top: 25px;
-      left: 28px;
+      background-position: left 29px top 25px;
     }
   }
 
   &--alarm {
+    background-image: url("../../img/icon-alarm.svg");
+    background-repeat: no-repeat;
+    background-position: left 14px top 14px;
     position: relative;
-    top: 13px;
-    left: 14px;
+
 
     @media (min-width: $tablet-width) {
-      top: 23px;
-      left: 24px;
+      background-position: left 25px top 23px;
     }
   }
 }
