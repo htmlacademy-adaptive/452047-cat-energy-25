@@ -49,17 +49,6 @@
 .offer__item {
   background-color: $basic-grey;
   margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
-  }
-}
-
-.offer__item-wrapper {
   padding: 0 20px;
   display: flex;
   flex-direction: row;
@@ -68,6 +57,7 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     flex-direction: column;
     padding-left: 52px;
     padding-right: 62px;
@@ -76,6 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
     width: 467px;
     padding-right: 51px;
     flex-direction: row;

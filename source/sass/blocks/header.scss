@@ -144,7 +144,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    width: 620px;
     z-index: 3;
   }
 }
@@ -209,6 +209,22 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $desktop-width) {
+    &--main {
+      margin-right: 37px;
+    }
+
+    &--catalog {
+      margin-right: 32px;
+    }
   }
 }
 
