@@ -76,12 +76,13 @@
 }
 
 .offer__image {
-  width: 70px;
   padding-top: 21px;
+  margin-right: 20px;
 
   &--pro {
+    margin-right: 5px;
     position: relative;
-    top: 3px;
+    top: 0;
     left: -7px;
   }
 
@@ -90,6 +91,7 @@
     top: 80px;
     left: 450px;
     padding-top: 0;
+    margin-right: 0;
 
     &--pro {
       top: 90px;
@@ -178,12 +180,8 @@
   font-weight: $font-weight-regular;
   color: $special-dark-grey;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 18px;
   margin-bottom: 38px;
-
-  &--pro {
-    padding-top: 26px;
-  }
 
   @media (min-width: $tablet-width) {
     width: 340px;
