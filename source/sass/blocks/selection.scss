@@ -33,26 +33,3 @@
     margin: auto;
   }
 }
-
-.selection::before {
-  position: absolute;
-  content: "";
-  width: 65%;
-  height: 2px;
-  background-color: $basic-green;
-  box-shadow: 0 214px 0 0 $basic-green, 0 451px 0 0 $basic-green;
-  top: 386px;
-  right: 0;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    top: 560px;
-    box-shadow: 0 300px 0 0 $basic-green, 0 653px 0 0 $basic-green;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 290px;
-    box-shadow: 0 232px 0 0 $basic-green, 0 585px 0 0 $basic-green;
-  }
-}

@@ -120,7 +120,7 @@
   content: "";
   width: 280px;
   height: 1px;
-  bottom: -15px;
+  bottom: -18px;
   left: 0;
   background-color: $special-grey;
 
@@ -247,6 +247,12 @@
 .additional__item-price {
   @media (min-width: $tablet-width) {
     margin-left: 50px;
+    width: 44px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
